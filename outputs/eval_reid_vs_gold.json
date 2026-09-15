@@ -1,0 +1,39 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "outputs/model_reid_clip_01.txt",
+  "gt_file": "gold/clip_01/gt.txt",
+  "pred_label": "yolo26n.pt + BoT-SORT + ReID treatment",
+  "gt_label": "gold clip_01",
+  "metrics": {
+    "HOTA": 0.763,
+    "DetA": 0.711,
+    "AssA": 0.820,
+    "LocA": 0.872,
+    "IDF1": 0.900,
+    "MOTA": 0.792,
+    "MOTP": 0.860,
+    "FP": 91,
+    "FN": 26,
+    "IDSW": 2,
+    "GT_boxes": 573,
+    "PRED_boxes": 638
+  },
+  "diagnostics": {
+    "id_switches": [
+      { "frame": 87, "gt_track": 5, "from_pred": 17, "to_pred": 18 },
+      { "frame": 113, "gt_track": 6, "from_pred": 24, "to_pred": 31 }
+    ],
+    "fragmented_gt_tracks": [
+      { "gt_track": 5, "pred_tracks": [18, 17], "gt_length": 60 },
+      { "gt_track": 6, "pred_tracks": [31, 24], "gt_length": 56 },
+      { "gt_track": 7, "pred_tracks": [29, 39], "gt_length": 85 }
+    ],
+    "ghost_pred_tracks": [
+      { "pred_track": 7, "frames": [16, 116], "length": 43 },
+      { "pred_track": 27, "frames": [106, 121], "length": 16 },
+      { "pred_track": 38, "frames": [158, 178], "length": 16 }
+    ]
+  }
+}

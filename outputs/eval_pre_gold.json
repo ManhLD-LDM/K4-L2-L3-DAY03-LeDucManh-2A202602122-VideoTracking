@@ -1,0 +1,76 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "evidence\\pre-gold\\clip_01\\gt.txt",
+  "gt_file": "gold\\clip_01\\gt.txt",
+  "pred_label": "PRED evidence\\pre-gold\\clip_01\\gt.txt",
+  "gt_label": "GT   gold\\clip_01\\gt.txt",
+  "metrics": {
+    "HOTA": 0.8236,
+    "DetA": 0.8067,
+    "AssA": 0.843,
+    "LocA": 0.8942,
+    "IDF1": 0.9611,
+    "IDTP": 531,
+    "IDFP": 1,
+    "IDFN": 42,
+    "MOTA": 0.925,
+    "MOTP": 0.8821,
+    "IDSW": 0,
+    "FP": 1,
+    "FN": 42,
+    "GT_boxes": 573,
+    "PRED_boxes": 532
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.9610859728506788,
+        "required": 0.8,
+        "passed": true
+      },
+      "MOTA": {
+        "value": 0.924956369982548,
+        "required": 0.75,
+        "passed": true
+      },
+      "MOTP": {
+        "value": 0.8820525973605824,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [],
+    "fragmented_gt_tracks": [],
+    "partially_covered_gt_tracks": [
+      {
+        "gt_track": 6,
+        "covered": 44,
+        "gt_length": 56,
+        "ratio": 0.79
+      }
+    ],
+    "ghost_pred_tracks": [],
+    "id_switches": [],
+    "loose_boxes": [
+      {
+        "frame": 96,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.565
+      },
+      {
+        "frame": 116,
+        "gt_track": 6,
+        "pred_track": 6,
+        "iou": 0.583
+      }
+    ],
+    "n_gt_tracks": 8,
+    "n_pred_tracks": 8
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "outputs/model_reid_clip_01.txt",
+  "gt_file": "annotations/clip_01/gt.txt",
+  "pred_label": "yolo26n.pt + BoT-SORT + ReID treatment",
+  "gt_label": "nhãn của bạn",
+  "metrics": {
+    "HOTA": 0.769,
+    "DetA": 0.708,
+    "AssA": 0.838,
+    "LocA": 0.882,
+    "IDF1": 0.891,
+    "MOTA": 0.759,
+    "MOTP": 0.874,
+    "FP": 117,
+    "FN": 11,
+    "IDSW": 0,
+    "GT_boxes": 532,
+    "PRED_boxes": 638
+  },
+  "diagnostics": {
+    "ghost_pred_tracks": [
+      { "pred_track": 7, "frames": [16, 116], "length": 43, "reason": "model FP (vật thể tĩnh đứng im)" },
+      { "pred_track": 27, "frames": [106, 121], "length": 16 },
+      { "pred_track": 38, "frames": [158, 178], "length": 16 },
+      { "pred_track": 9, "frames": [55, 60], "length": 6 },
+      { "pred_track": 34, "frames": [165, 170], "length": 6 }
+    ],
+    "loose_boxes": [
+      { "frame": 190, "gt_track": 2, "iou": 0.53 },
+      { "frame": 140, "gt_track": 2, "iou": 0.57 }
+    ]
+  }
+}
