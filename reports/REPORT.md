@@ -136,5 +136,5 @@ Bạn sẽ sửa gì trong `GUIDELINE_MINI.md`, và đổi gì trong quy trình 
 - [x] `outputs/eval_bytetrack_vs_gold.json`, `outputs/eval_reid_vs_gold.json`, `outputs/eval_reid_vs_me.json`
 - [x] `reports/review_partner.md`
 - [x] `reports/REPORT.md` (file này)
-- [ ] `TEAM.md` (không áp dụng do làm bài tập cá nhân / solo)
+- [x] `TEAM.md` (đã khai báo thông tin cá nhân và phần việc tự sở hữu)
 
